@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
-import { HEADER_STYLE, HOME } from './core/header/constants/header-constants';
+import { HEADER_STYLE, HOME } from '@header/constants/header-constants';
 
 export const homeRootAnimation = 'Home';
 

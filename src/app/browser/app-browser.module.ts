@@ -7,11 +7,11 @@ import {
   IS_MOBILE,
   LOCAL_STORAGE,
   SESSION_STORAGE,
-} from '../core/tokens/app.tokens';
+} from '@app/core/tokens/app.tokens';
 
-import { LocalStorage } from '../core/models/local-storage';
-import { SessionStorage } from '../core/models/session-storage';
-import { BrowserProperties } from '../core/models/browser-properties';
+import { SessionStorage } from '@app/core/models/session-storage';
+import { BrowserProperties } from '@app/core/models/browser-properties';
+import { LocalStorage } from '@app/core/models/local-storage';
 
 export function getLocalStorage(): LocalStorage {
   return {

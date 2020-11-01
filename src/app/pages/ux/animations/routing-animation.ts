@@ -1,5 +1,5 @@
 import { transition, trigger, query, style, animate, group } from '@angular/animations';
-import { homeRootAnimation } from 'src/app/app-routing.module';
+import { homeRootAnimation } from '@app/app-routing.module';
 
 const slideRightAnimation = [
   query(':enter, :leave', style({ position: 'fixed', width: '100%', zIndex: '4' }), { optional: true }),

@@ -1,11 +1,11 @@
 import { AfterViewInit, Component, Inject, OnInit } from '@angular/core';
 import { ActivationEnd, NavigationEnd, Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { filter, map, take } from 'rxjs/operators';
+import { filter } from 'rxjs/operators';
 
-import { IS_BROWSER } from 'src/app/core/tokens/app.tokens';
-import { HeaderFacade } from '../../header.facade';
-import { Header } from '../../interfaces/header.interface';
+import { IS_BROWSER } from '@core/tokens/app.tokens';
+import { HeaderFacade } from '@header/header.facade';
+import { Header } from '@header/interfaces/header.interface';
 
 @Component({
   selector: 'app-header',

@@ -5,3 +5,35 @@
 @use 'base/typography';
 
 @use 'abstracts/mixins';
+
+.btn:focus {
+  box-shadow: none;
+}
+
+button {
+  position: relative;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+button:after {
+  content: "";
+  display: block;
+  background: var(--gray-8);
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}

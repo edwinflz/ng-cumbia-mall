@@ -1,5 +1,7 @@
 {
   "HEADER": {
-    "TITLE": "hola"
+    "PLACEHOLDER-SEARCH": "Buscar producto ó negocio",
+    "PLACEHOLDER-SELECT": "Sincelejo",
+    "BUTTON-LOGIN": "Ingresar"
   }
 }

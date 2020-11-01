@@ -1,7 +1,7 @@
 import {
   DEFAULT_HEADER_COLOR,
   HEADER_STYLE,
-} from '../constants/header-constants';
+} from '@header/constants/header-constants';
 
 export interface Header {
   classType: string;
@@ -28,7 +28,7 @@ export const HEADER_STYLES: Header[] = [
   },
   {
     classType: HEADER_STYLE.BASIC,
-    showOptions: true,
+    showOptions: false,
     title: null,
     color: DEFAULT_HEADER_COLOR,
     showTitle: false,

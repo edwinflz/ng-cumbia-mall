@@ -10,7 +10,7 @@ import { TranslocoBrowserModule } from './browser/transloco-browser.module';
 import { CoreModule } from './core/core.module';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { environment } from 'src/environments/environment';
+import { environment } from '@environment';
 import { globalReducers } from './store/reducers';
 
 export const REDUCER_TOKEN = new InjectionToken('Registered Reducers');

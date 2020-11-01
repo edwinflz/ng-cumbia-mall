@@ -8,6 +8,7 @@ import { headerFeatureName } from './constants/header-constants';
 import { HeaderState } from './store/state/header.state';
 import { headerRootReducer } from './store/reducer';
 import { HeaderFacade } from './header.facade';
+import { TranslocoModule } from '@ngneat/transloco';
 
 export const HEADER_REDUCER_TOKEN = new InjectionToken<
   ActionReducerMap<HeaderState>
@@ -20,6 +21,7 @@ export const HEADER_REDUCER_TOKEN = new InjectionToken<
     CommonModule,
     RouterModule,
     StoreModule.forFeature(headerFeatureName, HEADER_REDUCER_TOKEN),
+    TranslocoModule
   ],
   providers: [
     HeaderFacade,

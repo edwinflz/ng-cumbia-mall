@@ -7,8 +7,9 @@ import {
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { environment as ENV } from 'src/environments/environment';
-import { TranslocoHttpLoader } from '../translate/transoloco-http.loader';
+
+import { environment as ENV } from '@environment';
+import { TranslocoHttpLoader } from '@app/translate/transoloco-http.loader';
 
 @NgModule({
   imports: [CommonModule, TranslocoModule],

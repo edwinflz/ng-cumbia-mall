@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { State } from 'src/app/store/state/state';
+import { State } from '@app/store/state/state';
 
 import { Header, HeaderSelection } from './interfaces/header.interface';
 import { headerActions } from './store/actions/header.action';

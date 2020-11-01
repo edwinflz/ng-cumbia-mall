@@ -1,6 +1,6 @@
 import { Action, createReducer, on } from '@ngrx/store';
-import { HEADER_STYLE } from '../../constants/header-constants';
-import { Header, HEADER_STYLES } from '../../interfaces/header.interface';
+import { HEADER_STYLE } from '@header/constants/header-constants';
+import { Header, HEADER_STYLES } from '@header/interfaces/header.interface';
 import { setHeaderStyleAction } from '../actions/header.action';
 
 export const initialState: Header = HEADER_STYLES.find(
