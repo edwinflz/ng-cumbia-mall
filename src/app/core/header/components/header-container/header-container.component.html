@@ -1,1 +1,3 @@
-<p>header-container works!</p>
+<ng-container *ngIf="headerStyle$ | async as style">
+  <p>{{style.title}}</p>
+</ng-container>

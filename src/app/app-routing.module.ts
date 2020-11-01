@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
+import { HEADER_STYLE, HOME } from './core/header/constants/header-constants';
 
 export const homeRootAnimation = 'Home';
 
@@ -10,6 +11,11 @@ const routes: Routes = [
       import('./pages/home/home.module').then((m) => m.HomeModule),
     data: {
       animation: homeRootAnimation,
+      header_style: {
+        style: HEADER_STYLE.FULL,
+        title: HOME,
+        showTitle: false
+      }
     },
   },
 ];
